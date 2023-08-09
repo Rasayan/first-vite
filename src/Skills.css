@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@400;500&family=Roboto+Mono:wght@300;400&display=swap');
+
+.skill-section {
+    padding: 6em 15em 14em 15em;
+}
+
+.frontSkills,
+.backSkills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skillHeading,
+.skill1Head,
+.skill2Head {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#skillHeading {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.skill1Head,
+.skill2Head {
+    font-size: 1.7em;
+}
+
+.skillList {
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills ion-icon {
+    font-size: 4em;
+    transition: all 80ms;
+}
+
+.frontSkills {
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.backSkills {
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.frontSkills .skills:first-child ion-icon:hover {
+    font-size: 4.7em;
+    color: aqua;
+}
+
+.frontSkills .skills:nth-child(2) ion-icon:hover {
+    font-size: 4.7em;
+    color: blue;
+}
+
+.frontSkills .skills:nth-child(3) ion-icon:hover {
+    font-size: 4.7em;
+    color: yellow;
+}
+
+.frontSkills .skills:nth-child(4) ion-icon:hover {
+    font-size: 4.7em;
+    color: orange;
+}
+
+
+
+.backSkills .skills:first-child ion-icon:hover {
+    font-size: 4.7em;
+    color: green;
+}
+
+.backSkills .skills:nth-child(2) ion-icon:hover {
+    font-size: 4.7em;
+}
+
+.backSkills .skills:nth-child(3) ion-icon:hover {
+    font-size: 4.7em;
+    color: red;
+}
+
+@media (max-width: 1590px) {
+    .skill-section {
+        padding: 6em 15em 6em 15em;
+    }
+}

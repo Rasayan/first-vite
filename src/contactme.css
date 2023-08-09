@@ -1,0 +1,57 @@
+.contactMe {
+    padding: 6em 15em 15em 15em;
+    
+}
+.contact {
+    padding: 2em;
+    border: 2px white solid;
+    border-radius: 1em;
+    background-image: linear-gradient(to right top, #12c2e9, #00baf7, #20afff,
+     #5ba1ff, #8a90ff, #ae81f4, #cc70e2, #e55dcb, #f450af, #fb4991, 
+     #fc4975, #f64f59);
+    display: flex;
+    justify-content: space-around;
+    align-items: first baseline;
+}
+
+.phoneNo,
+.eMail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactHead {
+    font-size: 1.9em
+}
+
+.contactIcon {
+    font-size: 3em;
+}
+
+#contactNumber {
+    font-size: 1.4em;
+}
+
+.eMail {
+    width: 20%;
+}
+
+#mailDescription {
+    width: 140%;
+    line-height: 2;
+    text-align: center;
+}
+
+.eMail .contactButton {
+    margin: 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.eMail .contactButton:hover a {
+    color: aliceblue;
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@400;500&family=Roboto+Mono:wght@300;400&display=swap');
+
+.nav {
+  /* padding: 1em 4em; */
+  padding: 1em 12em;
+  top: 2em;
+  display: flex;
+  width: 80%;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.headName
+{
+  font-size: 1em;
+  /* background-image: linear-gradient(to right , #2980b9, #338fc6, #3f9fd2, #4bafde, #59bfea, #76c9f1, #8fd3f8, #a5ddff, #c5e3ff, #dfebff, #f2f4ff, #ffffff); */
+  background-image: linear-gradient(to right, #00f260, #00deb5, #36D1DC, #00c3f4, #00a0ff, #0575e6, #5B86E5);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.list {
+  width: 22%;
+}
+
+.nav .contactMe {
+  padding: 0;
+}
+
+.navList {
+  display: flex;
+  padding: 0.4em;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navList li a {
+  margin: 6px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navList li:hover a {
+  font-size: 1.2em;
+  margin: 2px;
+}
+
+.glow-on-hover {
+  width: 9em;
+  height: 3em;
+  border: none;
+  border-width: 1px;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(to right, #00f260, #00deb5, #00c3f4, #00a0ff, #0575e6);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #fff
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+@media (max-width: 1590px) {
+  .nav {
+    padding: 0 11em; 
+  }
+}
+
+

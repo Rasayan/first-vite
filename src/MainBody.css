@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@400;500&family=Roboto+Mono:wght@300;400&display=swap');
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes slide-bck-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(-400px);
+              transform: translateZ(-400px);
+    }
+  }
+  @keyframes slide-bck-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(-400px);
+              transform: translateZ(-400px);
+    }
+  }
+  
+
+.main-body {
+    margin: 8em 15em 5em 15em;
+}
+
+.body-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+
+.main-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0.5em;
+    
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.mainRole {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    padding-left: 0;
+}
+
+.text_shadows {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.4em;
+}
+
+.buttons {
+    margin: 0 15em;
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons button {
+    font-weight: 700;
+}
+
+.buttons button:first-child {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.buttons button:last-child {
+    background: linear-gradient(#343a40, #343a40) padding-box,
+                linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) border-box;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    color: #fff;
+}
+
+.buttons .slide-bck-center {
+	-webkit-animation: slide-bck-center 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: slide-bck-center 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+.followIcons {
+    margin-top: 2em;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+.listIconsMain {
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-list a ion-icon {
+    font-size: 1.5em;
+    transition: 80ms;
+    margin: 3px;
+}
+
+.icon-list:hover a ion-icon {
+    font-size: 1.8em;
+    padding: 0.5px;
+    margin: 0;
+}
+
+@media (max-width: 1540px) {
+  .main-body {
+    margin: 1em 15em 2em 15em;
+  }
+    
+  .buttons {
+      width: 15%;
+  }
+    
+}
+
